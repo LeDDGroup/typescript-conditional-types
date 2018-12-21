@@ -6,6 +6,13 @@
 
 Helpers for typescript generic types
 
+**Table of Contents**
+
+- [Motivation](#motivation)
+- [Install](#install)
+- [Type Helper List](#type-helper-list)
+- [Usage Example](#usage-example)
+
 ## Motivation
 
 Creating complex types with conditional types ( `T extends U ? X : Y` ) could be a little verbose. This package aims to simplify code and make it more readable.

@@ -1,0 +1,37 @@
+{
+  "name": "typescript-conditional-types",
+  "description": "Helpers for typescript generic types",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc -p tsconfig-build.json",
+    "prepare": "npm run build",
+    "release": "standard-version",
+    "test": "tsc --noEmit"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test && pretty-quick --staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^7.2.1",
+    "@commitlint/config-conventional": "^7.1.2",
+    "husky": "^1.1.2",
+    "prettier": "^1.13.7",
+    "pretty-quick": "^1.8.0",
+    "standard-version": "^4.4.0",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {}
+}

@@ -21,7 +21,17 @@
     }
   },
   "keywords": [
-    "typescript"
+    "and",
+    "conditional",
+    "extends",
+    "generic",
+    "if",
+    "not",
+    "or",
+    "types",
+    "typescript",
+    "utility",
+    "utitlities"
   ],
   "license": "MIT",
   "devDependencies": {

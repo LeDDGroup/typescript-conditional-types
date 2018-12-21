@@ -17,24 +17,6 @@ Helpers for typescript generic types
 
 Creating complex types with conditional types ( `T extends U ? X : Y` ) could be a little verbose. This package aims to simplify code and make it more readable.
 
-Instead of
-
-```ts
-type ComplexType<A> = A extends boolean
-  ? number
-  : A extends number ? number : string
-  : string
-```
-
-You could write
-
-```ts
-type ComplexType<A> = If<
-  Or<Extends<A, number>, Extends<A, boolean>>,
-  number,
-  string
->;
-```
 
 ## Install
 
